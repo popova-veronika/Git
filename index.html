@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="tree"
+          src="diplomdarbs_TEST_RETOP_BAKE.glb">
+        </a-asset-item>
+      </a-assets>
+
+      <a-light type="ambient" intensity="1"></a-light>
+      <a-light type="directional" position="1 2 1"></a-light>
+
+      <a-gltf-model
+        src="#tree"
+        position="0 0 -3"
+        scale="2 2 2">
+      </a-gltf-model>
+
+      <a-camera position="0 1.6 5"></a-camera>
+    </a-scene>
+  </body>
+</html>
